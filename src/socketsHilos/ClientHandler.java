@@ -15,7 +15,7 @@ public class ClientHandler implements Runnable {
     }
 
     @Override public void run() {
-        try ( // Flujo de entrada para leee lo que el cliente envia
+        try ( // Flujo de entrada para lee lo que el cliente envia
               DataInputStream input = new DataInputStream(clientSocket.getInputStream());
               // Flujo de salida para enviar mensajes al cliente
               DataOutputStream output = new DataOutputStream(clientSocket.getOutputStream());
