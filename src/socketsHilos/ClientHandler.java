@@ -18,7 +18,7 @@ public class ClientHandler implements Runnable {
         try ( // Flujo de entrada para leee lo que el cliente envia
               DataInputStream input = new DataInputStream(clientSocket.getInputStream());
               // Flujo de salida para enviar mensajes al cliente
-              DataOutputStream output = new DataOutputStream(clientSocket.getOutputStream();
+              DataOutputStream output = new DataOutputStream(clientSocket.getOutputStream());
               ) {
                   //Leer los datos del cliente
             String message = input.readUTF();
